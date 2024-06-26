@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
 <style>
+@import url('./style/reset.css');
+@import url('https://fonts.google.com/?utm_source=bdmtools&utm_medium=siteweb&utm_campaign=google-fonts&preview.text=%C3%A0%20la%20recherche%20d%27une%20police%20d%27%C3%A9criture&preview.text_type=custom&preview.size=36&category=Handwriting&sort=popularity');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px 20px;
+  background-color: navajowhite;
 }
 </style>
